@@ -17,26 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bd1-n9-hj1">
-                                <rect key="frame" x="117" y="102" width="180" height="159"/>
+                                <rect key="frame" x="117" y="102" width="180" height="159.5"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <rect key="contentStretch" x="0.40000000000000002" y="0.0" width="1" height="1"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q75-l6-cwJ">
-                                <rect key="frame" x="117" y="283" width="180" height="159"/>
+                                <rect key="frame" x="117" y="283.5" width="180" height="160"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <rect key="contentStretch" x="0.40000000000000002" y="0.0" width="1" height="1"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-yx-qbh">
-                                <rect key="frame" x="93" y="768" width="229" height="43"/>
+                                <rect key="frame" x="93" y="770" width="229" height="41"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start!">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start!"/>
+                                <connections>
+                                    <action selector="statButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXI-wP-KfH"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOR-J5-Dgw">
-                                <rect key="frame" x="117" y="467" width="180" height="159"/>
+                                <rect key="frame" x="117" y="468.5" width="180" height="159.5"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <rect key="contentStretch" x="0.40000000000000002" y="0.0" width="1" height="1"/>
                             </view>
@@ -66,6 +68,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SWw-yx-qbh" secondAttribute="trailing" constant="92" id="qZb-HI-wqy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="GreenLable" destination="SOR-J5-Dgw" id="Fdp-Ap-J3K"/>
+                        <outlet property="OrangeLable" destination="q75-l6-cwJ" id="xy9-P4-fzl"/>
+                        <outlet property="RGBButton" destination="SWw-yx-qbh" id="Ol7-vf-6fn"/>
+                        <outlet property="RedLable" destination="bd1-n9-hj1" id="5pM-0Y-F0N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
